@@ -577,7 +577,7 @@ section:nth-child(2n+1){
     display: flex;
 
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -620,7 +620,8 @@ margin-right :150px ;
 
 
 #get-in-touch-details{
-    width: 400px;
+    margin:auto;
+    width: 90%;
     /*margin-left: 110px;*/
     color: white;
 }
