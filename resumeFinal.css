@@ -463,10 +463,13 @@ section:nth-child(2n+1){
         margin-top: 120px;
     }
     #box2 h2{
-        font-size: 20px;
+        font-size: 16px;
     }
     #box2 h3{
-        font-size: 18px;
+        font-size: 14px;
+    }
+    #description{
+        font-size: 14px;
     }
 
      #box1 img{
