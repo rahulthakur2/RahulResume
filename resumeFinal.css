@@ -386,41 +386,6 @@ section:nth-child(2n+1){
     }
 }
 
-@media screen and (max-width: 500px){
-    .timeline-box{
-        left: 10%;
-        width: 90%;
-        min-width: 200px;
-        margin: 50px 0;
-    }
-
-    .timeline-box:nth-child(even){
-        left:10%;
-    }
-
-    .box-separator{
-        left:-15%;
-        height: 370%;
-
-    }
-    .timeline-box:nth-child(even)::before{
-        left: -15%;
-    }
-
-    .timeline-box:nth-child(odd)::before{
-        left: -15%;
-    }
-    .about p{
-        font-size: 12px;
-    }
-    header{
-
-        min-height: 50vh;
-    }
-    .home h1{
-        margin-top: 120px;
-    }
-}
 /*.timeline{*/
 /*    border:1px solid red;*/
 /*}*/
@@ -462,6 +427,53 @@ section:nth-child(2n+1){
     font-family: "Lucida Console", Courier, monospace;
 }
 
+
+@media screen and (max-width: 500px){
+    .timeline-box{
+        left: 10%;
+        width: 90%;
+        min-width: 200px;
+        margin: 50px 0;
+    }
+
+    .timeline-box:nth-child(even){
+        left:10%;
+    }
+
+    .box-separator{
+        left:-15%;
+        height: 370%;
+
+    }
+    .timeline-box:nth-child(even)::before{
+        left: -15%;
+    }
+
+    .timeline-box:nth-child(odd)::before{
+        left: -15%;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    header{
+
+        min-height: 50vh;
+    }
+    .home h1{
+        margin-top: 120px;
+    }
+    #box2 h2{
+        font-size: 20px;
+    }
+    #box2 h3{
+        font-size: 18px;
+    }
+
+     #box1 img{
+        height: 30px;
+        width: 30px;
+    }
+}
 
 
 
