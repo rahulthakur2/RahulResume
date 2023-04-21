@@ -105,7 +105,7 @@ function scrollVertically(targetSection) {
 //skill section
 var progressBars = document. querySelectorAll('.skills-progress > div');
 var skillContainer = document.getElementById("skill-container");
-window.addEventListener('scroll',checkScroll);
+window.addEventListener('scroll',checkScroll2);
 var animationDone = false;
 
 
@@ -143,14 +143,44 @@ function checkScroll(){
     var coordinates = skillContainer.getBoundingClientRect();
     if(!animationDone &&   coordinates.top <= window.innerHeight){       //window.innerHeigth get viewPort Height
         animationDone = true;
-        console.log("rahul");
         fillBars();
-    }else if(coordinates.top > window.innerHeight){
+    }else if(coordinates.top > window.innerHeight) {
         animationDone = false;
         intializeBars();
     }
-
-
+}
+function intializeBar(i){
+    progressBars[i].style.width = 0 + "%";
+} 
+function fillBar(i){
+    let targetWidth = progressBars[i].getAttribute("data-bar-width");
+    let currentWidth = 0;
+    let interval = setInterval(function (){
+        if(currentWidth > targetWidth){
+            clearInterval(interval);
+            return;
+        }
+        currentWidth++;
+        progressBars[i].style.width = currentWidth + '%';
+    },15);
 }
 
+var singleBarAnimationDone = [];
+for(let i = 0; i<progressBars[i].length;++i){
+    singleBarAnimationDone.push(false);
+}
 
+function checkScroll2(){
+    for(var i = 0;i<progressBars.length;++i){
+        var coordinates = progressBars[i].getBoundingClientRect()
+        if( !singleBarAnimationDone[i] && coordinates.top <= window.innerHeight){
+            fillBar(i);
+            singleBarAnimationDone[i] = true;
+        }
+        else if(coordinates.top > window.innerHeight){
+            intializeBar(i);
+            singleBarAnimationDone[i] = false;
+        }
+    }
+
+}
