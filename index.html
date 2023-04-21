@@ -16,19 +16,19 @@
 
 <main>
     <header class="home text-center">
-        <nav class="horizontal-list">
+        <nav class="horizontal-list forScroll">
             <ul class="no-style">
                 <li>
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#rahulDetails">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#rahulSkills">SKILL</a>
+                    <a href="#skill">SKILL</a>
                 </li>
                 <li>
-                    <a href="#rahulWordExperience">WORK</a>
+                    <a href="#work">WORK</a>
                 </li>
                 <li>
                     <a href="#portfolio">PORTFOLIO</a>
@@ -39,7 +39,7 @@
             </ul>
         </nav>
 
-        <nav class="vertical-list">
+        <nav class="vertical-list forScroll">
             <div class="ham">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -48,13 +48,13 @@
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#rahulDetails">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#rahulSkills">SKILL</a>
+                    <a href="#skill">SKILL</a>
                 </li>
                 <li>
-                    <a href="#rahulWordExperience">WORK</a>
+                    <a href="#work">WORK</a>
                 </li>
                 <li>
                     <a href="#portfolio">PORTFOLIO</a>
@@ -68,19 +68,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <h1 class="rahulheading">RAHUL KUMAR</h1>
+        <h1>RAHUL KUMAR</h1>
 
         <div class="social-icon">
             <ul class="social-icon-style no-style" style="padding: 0">
@@ -122,7 +110,7 @@
     </header>
 
 
-    <section class="about" id="rahulDetails">
+    <section class="about" id="about">
         <div class="rahul-img">
             <img src="images/rahul.jpg" alt="">
         </div>
@@ -141,7 +129,7 @@
 
     </section>
 
-    <section class="skill" id="rahulSkills">
+    <section class="skill" id="skill">
 
         <h1 class="section-heading mb75px">
 			<span>
@@ -150,11 +138,11 @@
             <span>SKILLS</span>
         </h1>
 
-        <div class="skills-display">
+        <div id="skill-container" class="skills-display">
 
             <div class="skills-progress">
 
-                <div class="eighty-five-percentage mb-blue">
+                <div class="eighty-five-percentage mb-blue" data-bar-width = "85">
                     <div class="skills-name">
                         <span>C++</span>
                     </div>
@@ -165,7 +153,7 @@
 
             <div class="skills-progress">
 
-                <div class="sixty-percentage mb-purple">
+                <div class="sixty-percentage mb-purple" data-bar-width = "60">
                     <div class="skills-name">
                         <span>REACT</span>
                     </div>
@@ -174,7 +162,7 @@
 
             <div class="skills-progress">
 
-                <div class="forty-pecentage mb-orange">
+                <div class="forty-pecentage mb-orange" data-bar-width = "45">
                     <div class="skills-name">
                         <span>CSS</span>
                     </div>
@@ -183,7 +171,7 @@
 
             <div class="skills-progress">
 
-                <div class="eighty-five-percentage mb-pink">
+                <div class="eighty-five-percentage mb-pink" data-bar-width = "85">
                     <div class="skills-name">
                         <span>JAVA</span>
                     </div>
@@ -192,7 +180,7 @@
 
             <div class="skills-progress">
 
-                <div class="ninty-percentage mb-left">
+                <div class="ninty-percentage mb-left" data-bar-width = "95">
                     <div class="skills-name">
                         <span>HTML</span>
                     </div>
@@ -207,7 +195,7 @@
 
 
 
-    <section class="experience" id="rahulWordExperience">
+    <section class="experience" id="work">
 
 
         <h1 class="experience-heading mb75x">
@@ -511,33 +499,6 @@
 
 
 </main>
-<script>
-    let v1 = document.getElementsByClassName("ham");
-    let v2 = document.getElementsByClassName("vertical-list2");
-
-    v1[0].addEventListener('click',f1);
-
-    function f1(event){
-        v2[0].style.display = "block";
-        v1[0].removeEventListener('click',f1);
-        v1[0].addEventListener('click',f2);
-    }
-
-
-
-    function f2(event){
-        v2[0].style.display = "none";
-        v1[0].removeEventListener('click',f2);
-        v1[0].addEventListener('click',f1);
-    }
-
-    v2[0].addEventListener('click',function (event){
-        v2[0].style.display = "none";
-    })
-
-
-
-
-</script>
+<script src="resume.js"></script>
 </body>
 </html>
