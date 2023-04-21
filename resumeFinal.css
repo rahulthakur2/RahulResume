@@ -48,10 +48,15 @@ h1{
 
 .social-icon-style li i:hover{
     /*color:white;*/
-    font-size: 30px;
+
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.2);
 }
 
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
 
 header{
     background-image: linear-gradient(rebeccapurple,aquamarine);
