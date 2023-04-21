@@ -48,19 +48,19 @@
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a href="#rahulDetails">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#">SKILL</a>
+                    <a href="#rahulSkills">SKILL</a>
                 </li>
                 <li>
-                    <a href="#">WORK</a>
+                    <a href="#rahulWordExperience">WORK</a>
                 </li>
                 <li>
-                    <a href="#">PORTFOLIO</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
 
@@ -105,7 +105,7 @@
                     </a>
                 </li>
                 <li id="l">
-                    <a href="https://www.linkedin.com/in/rahul-kumar-10ba78215/" target="_blank.style.color='#4267B2'" onMouseOut="this.style.color=''">
+                    <a href="https://www.linkedin.com/in/rahul-kumar-10ba78215/" target="_blank" onMouseOver="this.style.color='#4267B2'" onMouseOut="this.style.color=''">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </li>
@@ -219,6 +219,7 @@
         </h1>
 
 
+
         <div class="timeline">
 
             <div class="timeline-box">
@@ -226,9 +227,11 @@
                 <div id="box1">
                     <img src="images/codingNijasLogo.webp" alt="">
                 </div>
+                <div class="downloadIcon">
                 <a href="images/003_MERN.pdf" download="">
-                <i class="fa-solid fa-download kirtan" ></i>
+                <i class="fa-solid fa-download kirtan"></i>
                 </a>
+                </div>
 
                 <div id = "box2">
                     <h2>
@@ -260,9 +263,12 @@
                 <div id="box1">
                     <img src="images/codingNijasLogo.webp" alt="">
                 </div>
+
+                <div class="downloadIcon">
                 <a href="images/003_MERN.pdf" download="">
                 <i class="fa-solid fa-download kirtan"></i>
                 </a>
+                </div>
 
                 <div id = "box2">
                     <h2>
@@ -289,11 +295,17 @@
             <div class="timeline-box">
 
                 <div id="box1">
+
                     <img src="images/codingNijasLogo.webp" alt="">
-                    <a href="images/003_MERN.pdf" download="">
+
+                    <div class="downloadIcon">
+                    <a href="images/003_MERN.pdf" download>
                         <i class="fa-solid fa-download kirtan"></i>
                     </a>
+                    </div>
+
                 </div>
+
 
                 <div id = "box2">
                     <h2>
@@ -315,14 +327,21 @@
 
             </div>
 
+
             <div class="timeline-box">
 
                 <div id="box1">
                     <img src="images/codingNijasLogo.webp" alt="">
                 </div>
+
+                <div class="downloadIcon">
                 <a href="images/003_MERN.pdf" download="">
                     <i class="fa-solid fa-download kirtan"></i>
                 </a>
+                </div>
+
+
+
 
                 <div id = "box2">
                     <h2>
@@ -337,6 +356,7 @@
 
 
                 </div>
+
                 <div id="description">
                     <br>
                     I successfully completed my C++ with data structure and algorithm with coding Ninja. <br>
@@ -489,7 +509,35 @@
 
 
 
-</main>
 
+</main>
+<script>
+    let v1 = document.getElementsByClassName("ham");
+    let v2 = document.getElementsByClassName("vertical-list2");
+
+    v1[0].addEventListener('click',f1);
+
+    function f1(event){
+        v2[0].style.display = "block";
+        v1[0].removeEventListener('click',f1);
+        v1[0].addEventListener('click',f2);
+    }
+
+
+
+    function f2(event){
+        v2[0].style.display = "none";
+        v1[0].removeEventListener('click',f2);
+        v1[0].addEventListener('click',f1);
+    }
+
+    v2[0].addEventListener('click',function (event){
+        v2[0].style.display = "none";
+    })
+
+
+
+
+</script>
 </body>
 </html>
