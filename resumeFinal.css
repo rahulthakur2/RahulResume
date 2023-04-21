@@ -121,15 +121,15 @@ header{
     display: none;
 }
 
-.vertical-list:hover .vertical-list2{
-    display: block;
-}
+/*.vertical-list:hover .vertical-list2{*/
+/*    display: block;*/
+/*}*/
 
 /*.vertical-list2{*/
 /*    display: none;*/
 /*}*/
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 700px){
     .vertical-list{
         display: block;
     }
@@ -365,6 +365,12 @@ section:nth-child(2n+1){
 }
 
 @media screen and (max-width: 1100px){
+    .timeline{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
     .timeline-box{
         left: 30%;
         width: 70%;
@@ -409,6 +415,19 @@ section:nth-child(2n+1){
 #box1 {
     display: inline;
 }
+.timeline-box h2,h3{
+    /*display: inline-block;*/
+
+}
+.downloadIcon{
+    /*border: 1px solid red;*/
+    height: 40px;
+    width:40px;
+    position: absolute;
+    top:8%;
+    right: 5%;
+    z-index: 100;
+}
 
 
 #box2{
@@ -442,7 +461,7 @@ section:nth-child(2n+1){
 
     .box-separator{
         left:-15%;
-        height: 370%;
+        height: 390%;
 
     }
     .timeline-box:nth-child(even)::before{
@@ -671,10 +690,12 @@ textarea{
 
 
 .kirtan{
-    color: black;
     position: absolute;
     right: 5%;
-    top:15%;
+    top:70%;
+
+    font-size: 25px;
+    color: black;
 }
 
 body{
