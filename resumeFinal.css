@@ -19,12 +19,18 @@ ul{
     margin:0;
 }
 h1{
+
     margin:0;
     padding: 0;
 }
+
 .text-center{
     text-align: center;
 }
+.social-icon-style li {
+    /*border: 1px solid red;*/
+}
+
 .social-icon-style {
     display: flex;
     justify-content: center;
@@ -97,7 +103,7 @@ header{
 .ham i{
     position: relative;
     top: 5%;
-    right: -45%;
+    left: 45%;
 }
 
 
@@ -107,7 +113,7 @@ header{
 
 .vertical-list2{
     position: absolute;
-    top:8%;
+    top:9%;
     right: 4%;
     /*border: 2px solid red;*/
     text-align: center;
