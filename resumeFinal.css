@@ -97,7 +97,7 @@ header{
 .ham i{
     position: relative;
     top: 5%;
-    right: -47%;
+    right: -45%;
 }
 
 
@@ -366,7 +366,7 @@ section:nth-child(2n+1){
 
 @media screen and (max-width: 1100px){
     .timeline{
-        width: 95%;
+        width: 90%;
     }
 }
 
