@@ -109,15 +109,18 @@ header{
 
 /*vertical list*/
 
-.ham i{
-    position: relative;
+.ham {
+    display: inline-block;
+    position: absolute;
     top: 5%;
-    left: 45%;
+    right: 5%;
+    /*border: 1px solid red;*/
 }
 
-
 .ham i{
+
     color:white;
+    /*border: 1px solid red;*/
 }
 
 .vertical-list2{
@@ -514,6 +517,20 @@ section:nth-child(2n+1){
      .timeline-box {
          min-height: 160px;
      }
+     .ham{
+         position: absolute;
+         top: 2%;
+         right: 5%;
+     }
+    .vertical-list2{
+
+        top:5%;
+        right: 4%;
+        /*border: 2px solid red;*/
+        text-align: center;
+    }
+
+
 }
 
 
@@ -716,4 +733,21 @@ textarea{
 body{
     overflow: hidden;
     overflow-y: scroll;
+}
+
+
+/*//others*/
+@media screen and (max-width: 700px){
+    #contact-details{
+        /*flex-direction: column;*/
+    }
+    #form1{
+        text-align: center;
+    }
+    #send-message{
+        margin:auto;
+    }
+
+
+
 }
